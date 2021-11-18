@@ -31,8 +31,7 @@ export const data_after_filtr = derived([data,lang_list,min_avg_f,max_result], (
     if (
         min_avg_ !== undefined &&
         min_avg_ !== null &&
-        min_avg_ >= 0 &&
-        min_avg_ <= 5
+        min_avg_ >= 0
     ) {
         for (let i = 0; i < after_filtr.length; i++) {
             let sum = 0;
